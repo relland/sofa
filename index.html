@@ -78,6 +78,7 @@
             z-index: 2;
             transition: background-color 0.3s ease;
             pointer-events: none;
+			border-radius: 20px;
         }
 
         /* Top layer - Sofa frame */
@@ -96,7 +97,7 @@
         }
 
         /* Sofa back */
-        .sofa-frame::before {
+        /*.sofa-frame::before {
             content: '';
             position: absolute;
             top: -40px;
@@ -105,20 +106,20 @@
             height: 60px;
             /*background: #4a4a4a;*/
             border-radius: 15px 15px 0 0;
-        }
+        }*/
 
         /* Sofa arms */
-        .sofa-frame::after {
+        /*.sofa-frame::after {
             content: '';
             position: absolute;
             top: -30px;
             left: -15px;
             width: 30px;
             height: 140px;
-            /*background: #4a4a4a;*/
+            background: #4a4a4a;
             border-radius: 15px 0 0 15px;
-            /*box-shadow: 360px 0 0 #4a4a4a;*/
-        }
+            box-shadow: 360px 0 0 #4a4a4a;
+        }*/
 
         /* Cut out for seat area */
         /* .seat-cutout {
@@ -209,11 +210,11 @@
                 height: 225px;
             }
             
-            .sofa-frame {
+            /*.sofa-frame {
                 width: 270px;
                 height: 120px;
                 left: 15px;
-            }
+            }*/
             
             .sofa-frame::before {
                 width: 250px;
@@ -222,9 +223,9 @@
             
             .seat-pillows-base,
             .color-overlay {
-                width: 220px;
+                /*width: 220px;
                 height: 75px;
-                left: 40px;
+                left: 40px;*/
             }
         }
     </style>
@@ -251,7 +252,7 @@
         <div class="color-picker-section">
             <h2>Choose Pillow Color</h2>
             <div class="color-picker-container">
-                <input type="color" id="colorPicker" value="#808080">
+                <input type="color" id="colorPicker" value="#131111">
                 
                 <div class="preset-colors">
                     <div class="preset-color" style="background-color: #808080;" data-color="#808080"></div>
@@ -261,11 +262,11 @@
                     <div class="preset-color" style="background-color: #feca57;" data-color="#feca57"></div>
                     <div class="preset-color" style="background-color: #ff9ff3;" data-color="#ff9ff3"></div>
                     <div class="preset-color" style="background-color: #a55eea;" data-color="#a55eea"></div>
-                    <div class="preset-color" style="background-color: #fd79a8;" data-color="#fd79a8"></div>
+                    <div class="preset-color" style="background-color: #131111;" data-color="#131111"></div>
                 </div>
                 
                 <div class="color-info">
-                    <strong>Selected Color:</strong> <span id="colorValue">#ff6b6b</span>
+                    <strong>Selected Color:</strong> <span id="colorValue">#131111</span>
                 </div>
             </div>
         </div>
@@ -298,7 +299,7 @@
         });
 
         // Initialize with default color
-        updateSofaColor('#ff6b6b');
+        updateSofaColor('#131111');
     </script>
 </body>
 </html>
